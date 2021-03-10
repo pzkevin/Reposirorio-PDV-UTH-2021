@@ -21791,7 +21791,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "PackageDiagram1",
+					"name": "DiagSolution",
 					"ownedViews": [
 						{
 							"_type": "UMLPackageView",
@@ -37385,7 +37385,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3/xW4NdedGJI="
 									},
-									"name": "EQUAL"
+									"name": "EQUAL",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -37393,7 +37394,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3/xW4NdedGJI="
 									},
-									"name": "NOT_EQUAL"
+									"name": "NOT_EQUAL",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -37401,7 +37403,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3/xW4NdedGJI="
 									},
-									"name": "GREATER_THAN"
+									"name": "GREATER_THAN",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -37409,7 +37412,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3/xW4NdedGJI="
 									},
-									"name": "LESS_THAN"
+									"name": "LESS_THAN",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -37417,7 +37421,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3/xW4NdedGJI="
 									},
-									"name": "GREATER_THAN_EQUAL"
+									"name": "GREATER_THAN_EQUAL",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -37425,7 +37430,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3/xW4NdedGJI="
 									},
-									"name": "LESS_THAN_EQUAL"
+									"name": "LESS_THAN_EQUAL",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -37433,7 +37439,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF3/xW4NdedGJI="
 									},
-									"name": "LIKE"
+									"name": "LIKE",
+									"type": ""
 								}
 							]
 						},
@@ -38384,7 +38391,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GO/cNewfCbc="
 							},
-							"name": "ASC"
+							"name": "ASC",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -38392,7 +38400,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GO/cNewfCbc="
 							},
-							"name": "DESC"
+							"name": "DESC",
+							"type": ""
 						}
 					]
 				},
@@ -38441,7 +38450,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GRH6gPQBmdw="
 							},
-							"name": "VARCHAR"
+							"name": "VARCHAR",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -38449,7 +38459,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GRH6gPQBmdw="
 							},
-							"name": "INT"
+							"name": "INT",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -38457,7 +38468,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GRH6gPQBmdw="
 							},
-							"name": "DOUBLE"
+							"name": "DOUBLE",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -38465,7 +38477,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GRH6gPQBmdw="
 							},
-							"name": "DATE"
+							"name": "DATE",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -38473,7 +38486,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GRH6gPQBmdw="
 							},
-							"name": "DATETIME"
+							"name": "DATETIME",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -38481,7 +38495,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GRH6gPQBmdw="
 							},
-							"name": "TINY_INT"
+							"name": "TINY_INT",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -38489,7 +38504,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GRH6gPQBmdw="
 							},
-							"name": "BIG_INT"
+							"name": "BIG_INT",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -38497,7 +38513,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF4GRH6gPQBmdw="
 							},
-							"name": "BLOB"
+							"name": "BLOB",
+							"type": ""
 						}
 					]
 				},
