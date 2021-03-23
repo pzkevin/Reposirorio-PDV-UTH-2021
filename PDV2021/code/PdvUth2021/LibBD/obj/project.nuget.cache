@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "faZTEMnmXB/FTXVG0mIAKpYQFFfUVJGn9YdaXXU9RZ/NHzBfLzFX7VamhMNohJr0rB/D6iUGHhKaDnf5bx/RSw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\K\\Desktop\\main\\Repositorio-PDV-UTH-2021\\PDV2021\\code\\PdvUth2021\\LibBD\\LibBD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\K\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\K\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
