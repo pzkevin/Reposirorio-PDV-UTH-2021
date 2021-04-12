@@ -7,3 +7,6 @@ C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibPdvU
 C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibPdvUth2021\obj\Debug\netstandard2.0\LibPdvUth2021.csproj.CoreCompileInputs.cache
 C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibPdvUth2021\obj\Debug\netstandard2.0\LibPdvUth2021.dll
 C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibPdvUth2021\obj\Debug\netstandard2.0\LibPdvUth2021.pdb
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibPdvUth2021\bin\Debug\netstandard2.0\LibBD.dll
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibPdvUth2021\bin\Debug\netstandard2.0\LibBD.pdb
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibPdvUth2021\obj\Debug\netstandard2.0\LibPdvUth2021.csproj.CopyComplete

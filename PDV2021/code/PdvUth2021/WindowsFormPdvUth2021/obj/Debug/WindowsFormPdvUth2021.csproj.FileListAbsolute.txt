@@ -32,3 +32,4 @@ C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\Windows
 C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\WindowsFormPdvUth2021\obj\Debug\WindowsFormPdvUth2021.csproj.CopyComplete
 C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\WindowsFormPdvUth2021\obj\Debug\WindowsFormPdvUth2021.exe
 C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\WindowsFormPdvUth2021\obj\Debug\WindowsFormPdvUth2021.pdb
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\WindowsFormPdvUth2021\obj\Debug\WindowsFormPdvUth2021.Form1.resources
