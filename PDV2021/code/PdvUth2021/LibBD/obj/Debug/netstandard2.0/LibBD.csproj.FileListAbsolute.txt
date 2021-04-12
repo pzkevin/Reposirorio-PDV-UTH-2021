@@ -1,0 +1,9 @@
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibBD\bin\Debug\netstandard2.0\LibBD.deps.json
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibBD\bin\Debug\netstandard2.0\LibBD.dll
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibBD\bin\Debug\netstandard2.0\LibBD.pdb
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibBD\obj\Debug\netstandard2.0\LibBD.csprojAssemblyReference.cache
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibBD\obj\Debug\netstandard2.0\LibBD.AssemblyInfoInputs.cache
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibBD\obj\Debug\netstandard2.0\LibBD.AssemblyInfo.cs
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibBD\obj\Debug\netstandard2.0\LibBD.csproj.CoreCompileInputs.cache
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibBD\obj\Debug\netstandard2.0\LibBD.dll
+C:\Users\K\Desktop\main\Repositorio-PDV-UTH-2021\PDV2021\code\PdvUth2021\LibBD\obj\Debug\netstandard2.0\LibBD.pdb

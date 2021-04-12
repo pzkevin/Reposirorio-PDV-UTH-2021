@@ -38,16 +38,15 @@ namespace LibBD
         /// <returns>True if the row is created. Flase if there's an Error. </returns>
         public abstract bool update(string table, List<DataCollection> data, int id);
         public abstract bool delete(string table, int id);
-        public abstract List<object> read(List<string> fields, string table, List<SearchCollection> data);
-        public abstract List<object> read(List<string> fields, string table1, string table2, List<string> onfields, List<SearchCollection> data);
-        public abstract List<object> index(string table, OrderBy order);
-
+        public abstract List<List<object>> read(List<string> fields, string table, List<SearchCollection> data);
+        public abstract List<List<object>> read(List<string> fields, string table1, string table2, List<string> onfields, List<SearchCollection> data);
+        public abstract List<List<object>> index(string table, OrderBy order);
         /// <summary>
         /// Opens the connection to the SERVER stablished by the connectionString
         /// </summary>
         /// <returns></returns>
         public abstract bool Connect();
-
+        
         /// <summary>
         /// Closes the connection to the SERVER stablished by the connectionString
         /// </summary>
