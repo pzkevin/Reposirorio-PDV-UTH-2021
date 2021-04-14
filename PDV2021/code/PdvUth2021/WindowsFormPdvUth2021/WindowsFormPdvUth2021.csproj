@@ -126,5 +126,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibBD\LibBD.csproj">
+      <Project>{10ED8EA2-BE7C-46C0-A2AA-A264513C8B61}</Project>
+      <Name>LibBD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibPdvUth2021\LibPdvUth2021.csproj">
+      <Project>{4E31F441-EEA1-410F-9912-B442B942EBBB}</Project>
+      <Name>LibPdvUth2021</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

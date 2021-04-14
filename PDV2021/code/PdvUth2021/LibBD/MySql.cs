@@ -27,7 +27,8 @@ namespace LibBD
             this.PWD = pwd;
             this.PORT = port;
             //Concatenates the connectionString
-            this.connectionString = $"Server={this.SERVER}; Port={this.PORT};Database={this.DBNAME};Uid={this.US};Pwd={this.PWD}:";
+            this.connectionString = $"Server={this.SERVER};Port={this.PORT};Database={this.DBNAME};Uid={this.US};Pwd={this.PWD};";
+            //this.connectionString = $"Server=localhost;Port=3306;Database=db_pdvuth2021;Uid=root;Pwd=julio;";
             //instanciate the connections
             this.con = new MySqlConnection(this.connectionString);
         }

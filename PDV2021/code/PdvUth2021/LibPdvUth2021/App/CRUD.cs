@@ -10,10 +10,11 @@ namespace LibPdvUth2021.App
         //atributes
         public string Table { get; set; }
         public List<string> FieldList { get; set; }
-        public static string ERROR { get; set; }
+        public string ERROR { get; set; }
 
         //hardcoded Database connection
-        BD libBD = new LibBD.MySql("localhost", "bd_pdvuth_2021", "root", "123123");
+        BD libBD = new LibBD.MySql("localhost", "db_pdvuth2021", "root", "julio", "3306");
+
         //Constructor
         public CRUD(string table, List<string> fieldList)
         {
@@ -21,6 +22,7 @@ namespace LibPdvUth2021.App
             FieldList = fieldList;
         }
 
+        
         public bool create(List<DataCollection> data) 
         {
             return libBD.create(this.Table, data);
