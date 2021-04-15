@@ -41,7 +41,7 @@
             //TINYINT,
             //DOUBLE,
             //FLOAT
-            return (this.FieldType == Types.INT || this.FieldType == Types.FLOAT || this.FieldType == Types.DOUBLE || this.FieldType == Types.TINYINT);
+            return !(this.FieldType == Types.INT || this.FieldType == Types.FLOAT || this.FieldType == Types.DOUBLE || this.FieldType == Types.TINYINT || this.FieldType == null);
         }
 
     }

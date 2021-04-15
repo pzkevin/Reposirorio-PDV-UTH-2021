@@ -97,7 +97,7 @@ namespace LibBD
                 this.Connect();
                 //parse the columns names using the dataCollection
                 //new string for the columns
-                string columns = "(";
+                string columns = "";
                 foreach (DataCollection column in data)
                     columns += column.Name + ", ";
                 columns = columns.Remove(columns.Length - 2);

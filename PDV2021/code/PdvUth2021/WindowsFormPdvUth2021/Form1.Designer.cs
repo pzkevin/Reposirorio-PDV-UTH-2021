@@ -180,10 +180,10 @@ namespace WindowsFormPdvUth2021
             // 
             this.comboMetricUnit.FormattingEnabled = true;
             this.comboMetricUnit.Items.AddRange(new object[] {
-            "UNIT",
+            "UNIDAD",
             "KILO",
-            "LITER",
-            "BOX"});
+            "LITRO",
+            "CAJA"});
             this.comboMetricUnit.Location = new System.Drawing.Point(378, 179);
             this.comboMetricUnit.Name = "comboMetricUnit";
             this.comboMetricUnit.Size = new System.Drawing.Size(121, 21);

@@ -21,7 +21,7 @@ namespace WindowsFormPdvUth2021
         private void btnSave_Click(object sender, EventArgs e)
         {
             Product prod = new Product();
-            if (prod.create(txtName.Text, txtDescription.Text, double.Parse(txtPrice.Text), txtBarcode.Text, int.Parse(comboBrand.SelectedItem.ToString()), int.Parse(comboSubcategory.SelectedItem.ToString()), comboMetricUnit.SelectedItem.ToString(), ""))
+            if (prod.create(txtName.Text, txtDescription.Text, double.Parse(txtPrice.Text), txtBarcode.Text, int.Parse(comboBrand.SelectedItem.ToString()), int.Parse(comboSubcategory.SelectedItem.ToString()), comboMetricUnit.SelectedItem.ToString()))
                 MessageBox.Show("Se registró el producto");
             else
                 MessageBox.Show(">ERROR<\n No se pudieron guardar los datos.");
