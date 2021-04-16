@@ -23,6 +23,10 @@ namespace WindowsFormPdvUth2021
             Product prod = new Product();
             if (prod.create(txtName.Text, txtDescription.Text, double.Parse(txtPrice.Text), txtBarcode.Text, int.Parse(comboBrand.SelectedItem.ToString()), int.Parse(comboSubcategory.SelectedItem.ToString()), comboMetricUnit.SelectedItem.ToString()))
                 MessageBox.Show("Se registró el producto");
+
+            if (prod.create(txtName.Text="", txtDescription.Text = "", double.Parse(txtPrice.Text = ""), txtBarcode.Text = "", int.Parse(comboBrand.SelectedItem.ToString()), int.Parse(comboSubcategory.SelectedItem.ToString()), comboMetricUnit.SelectedItem.ToString()))
+                MessageBox.Show("SIN REGISTRO");
+
             else
                 MessageBox.Show(">ERROR<\n No se pudieron guardar los datos.");
         }
