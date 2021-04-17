@@ -204,7 +204,7 @@ namespace WindowsFormPdvUth2021
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1424, 861);
+            this.ClientSize = new System.Drawing.Size(651, 323);
             this.Controls.Add(this.comboSubcategory);
             this.Controls.Add(this.comboMetricUnit);
             this.Controls.Add(this.comboBrand);

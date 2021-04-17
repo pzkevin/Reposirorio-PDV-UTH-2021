@@ -47,5 +47,10 @@ namespace LibPdvUth2021.App
         {
             return libBD.read(fieldList, this.Table, table2, on, search);
         }
+
+        public List<List<object>> read(List<string> list, List<SearchCollection> temp)
+        {
+            return libBD.read(this.FieldList, this.Table, temp);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using LibPdvUth2021.App;
+﻿using LibBD;
+using LibPdvUth2021.App;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -27,6 +28,29 @@ namespace LibPdvUth2021.Users
         public string RegionState { get; set; }
         public string CURP { get; set; }
         public string RFC { get; set; }
+
+        //public List<List<object>> barScan(string barCode)
+        //{
+        //    List<SearchCollection> data = new List<SearchCollection>();
+        //    data.Add(new SearchCollection("bar_code", CriteriaOperator.EQUAL, barCode, true, LogicOperator.NOTHING));
+        //    return base.read(data);
+        //}
+
+        public bool Login(string email, string password) 
+        {
+            List<SearchCollection> temp = new List<SearchCollection>();
+            SearchCollection UsPw = new SearchCollection("email", CriteriaOperator.EQUAL, (object)email, true, LogicOperator.NOTHING);
+            temp.Add(UsPw);
+            UsPw = new SearchCollection("password", CriteriaOperator.EQUAL, (object)UsPw, true, LogicOperator.NOTHING);
+            temp.Add(UsPw);
+
+            List<List<object>> res = base.read(new List<string>() { "email" }, temp);
+
+            if (res.Count == 0 || res.Count > 1)
+                return false;
+            else
+                return true;
+        }
 
     }
 }
