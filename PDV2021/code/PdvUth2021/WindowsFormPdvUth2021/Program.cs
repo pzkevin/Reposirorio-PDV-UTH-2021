@@ -16,8 +16,8 @@ namespace WindowsFormPdvUth2021
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
-          //Application.Run(new Form1());
+            Application.Run(new FrmLogin());
+            //Application.Run(new Form1());
         }
     }
 }

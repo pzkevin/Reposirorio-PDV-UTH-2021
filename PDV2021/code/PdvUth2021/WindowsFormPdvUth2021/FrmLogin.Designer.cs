@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormPdvUth2021
 {
-    partial class Login
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace WindowsFormPdvUth2021
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.logoHeaderLogin = new System.Windows.Forms.PictureBox();
             this.headerText = new System.Windows.Forms.Label();
@@ -137,7 +137,7 @@ namespace WindowsFormPdvUth2021
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // Login
+            // FrmLogin
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(484, 661);
@@ -147,7 +147,7 @@ namespace WindowsFormPdvUth2021
             this.Controls.Add(this.passwordInput);
             this.Controls.Add(this.emailInput);
             this.Controls.Add(this.panel1);
-            this.Name = "Login";
+            this.Name = "FrmLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoHeaderLogin)).EndInit();

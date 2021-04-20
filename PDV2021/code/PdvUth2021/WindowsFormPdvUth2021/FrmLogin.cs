@@ -11,23 +11,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormPdvUth2021
 {
-    public partial class Login : Form
+    public partial class FrmLogin : Form
     {
-        public Login()
+        public FrmLogin()
         {
             InitializeComponent();
         }
 
+
+        public static string nombre, tipo, correo;
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            User us = new User();
-            if (us.Login(emailInput.Text, passwordInput.Text)) 
+            User user = new User();
+            if (user.Login(emailInput.Text, passwordInput.Text)) 
             {
-                btnLogin.Text = "Bienvenido";
+                MessageBox.Show("Bienvenido");
             }
             else 
             {
-                MessageBox.Show($"El correo o contraseña no es valido");
+                MessageBox.Show("El correo o contraseña no es valido");
             }
 
 

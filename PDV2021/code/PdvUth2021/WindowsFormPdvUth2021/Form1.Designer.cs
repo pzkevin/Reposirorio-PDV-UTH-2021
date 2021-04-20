@@ -29,6 +29,7 @@ namespace WindowsFormPdvUth2021
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Nombre = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
@@ -46,12 +47,20 @@ namespace WindowsFormPdvUth2021
             this.comboBrand = new System.Windows.Forms.ComboBox();
             this.comboMetricUnit = new System.Windows.Forms.ComboBox();
             this.comboSubcategory = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Nombre
             // 
             this.Nombre.AutoSize = true;
-            this.Nombre.Location = new System.Drawing.Point(44, 128);
+            this.Nombre.Location = new System.Drawing.Point(23, 165);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(35, 13);
             this.Nombre.TabIndex = 0;
@@ -59,14 +68,14 @@ namespace WindowsFormPdvUth2021
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(110, 128);
+            this.txtName.Location = new System.Drawing.Point(89, 165);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(156, 20);
             this.txtName.TabIndex = 1;
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(110, 154);
+            this.txtDescription.Location = new System.Drawing.Point(89, 191);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(156, 20);
             this.txtDescription.TabIndex = 3;
@@ -74,7 +83,7 @@ namespace WindowsFormPdvUth2021
             // Description
             // 
             this.Description.AutoSize = true;
-            this.Description.Location = new System.Drawing.Point(44, 154);
+            this.Description.Location = new System.Drawing.Point(23, 191);
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(60, 13);
             this.Description.TabIndex = 2;
@@ -82,7 +91,7 @@ namespace WindowsFormPdvUth2021
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(110, 180);
+            this.txtPrice.Location = new System.Drawing.Point(89, 217);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(156, 20);
             this.txtPrice.TabIndex = 5;
@@ -90,7 +99,7 @@ namespace WindowsFormPdvUth2021
             // Price
             // 
             this.Price.AutoSize = true;
-            this.Price.Location = new System.Drawing.Point(44, 180);
+            this.Price.Location = new System.Drawing.Point(23, 217);
             this.Price.Name = "Price";
             this.Price.Size = new System.Drawing.Size(31, 13);
             this.Price.TabIndex = 4;
@@ -98,7 +107,7 @@ namespace WindowsFormPdvUth2021
             // 
             // txtBarcode
             // 
-            this.txtBarcode.Location = new System.Drawing.Point(110, 206);
+            this.txtBarcode.Location = new System.Drawing.Point(89, 243);
             this.txtBarcode.Name = "txtBarcode";
             this.txtBarcode.Size = new System.Drawing.Size(156, 20);
             this.txtBarcode.TabIndex = 7;
@@ -106,7 +115,7 @@ namespace WindowsFormPdvUth2021
             // Barcode
             // 
             this.Barcode.AutoSize = true;
-            this.Barcode.Location = new System.Drawing.Point(44, 206);
+            this.Barcode.Location = new System.Drawing.Point(23, 243);
             this.Barcode.Name = "Barcode";
             this.Barcode.Size = new System.Drawing.Size(47, 13);
             this.Barcode.TabIndex = 6;
@@ -115,7 +124,7 @@ namespace WindowsFormPdvUth2021
             // MetricUnit
             // 
             this.MetricUnit.AutoSize = true;
-            this.MetricUnit.Location = new System.Drawing.Point(314, 183);
+            this.MetricUnit.Location = new System.Drawing.Point(293, 220);
             this.MetricUnit.Name = "MetricUnit";
             this.MetricUnit.Size = new System.Drawing.Size(58, 13);
             this.MetricUnit.TabIndex = 8;
@@ -124,7 +133,7 @@ namespace WindowsFormPdvUth2021
             // Brand
             // 
             this.Brand.AutoSize = true;
-            this.Brand.Location = new System.Drawing.Point(337, 128);
+            this.Brand.Location = new System.Drawing.Point(316, 165);
             this.Brand.Name = "Brand";
             this.Brand.Size = new System.Drawing.Size(35, 13);
             this.Brand.TabIndex = 10;
@@ -133,7 +142,7 @@ namespace WindowsFormPdvUth2021
             // Subcategory
             // 
             this.Subcategory.AutoSize = true;
-            this.Subcategory.Location = new System.Drawing.Point(314, 157);
+            this.Subcategory.Location = new System.Drawing.Point(293, 194);
             this.Subcategory.Name = "Subcategory";
             this.Subcategory.Size = new System.Drawing.Size(67, 13);
             this.Subcategory.TabIndex = 12;
@@ -141,7 +150,7 @@ namespace WindowsFormPdvUth2021
             // 
             // txtImage
             // 
-            this.txtImage.Location = new System.Drawing.Point(110, 235);
+            this.txtImage.Location = new System.Drawing.Point(89, 272);
             this.txtImage.Name = "txtImage";
             this.txtImage.Size = new System.Drawing.Size(156, 20);
             this.txtImage.TabIndex = 15;
@@ -149,7 +158,7 @@ namespace WindowsFormPdvUth2021
             // Image
             // 
             this.Image.AutoSize = true;
-            this.Image.Location = new System.Drawing.Point(44, 235);
+            this.Image.Location = new System.Drawing.Point(23, 272);
             this.Image.Name = "Image";
             this.Image.Size = new System.Drawing.Size(36, 13);
             this.Image.TabIndex = 14;
@@ -157,7 +166,7 @@ namespace WindowsFormPdvUth2021
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(505, 128);
+            this.btnSave.Location = new System.Drawing.Point(484, 165);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 127);
             this.btnSave.TabIndex = 16;
@@ -171,7 +180,7 @@ namespace WindowsFormPdvUth2021
             this.comboBrand.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.comboBrand.Location = new System.Drawing.Point(378, 128);
+            this.comboBrand.Location = new System.Drawing.Point(357, 165);
             this.comboBrand.Name = "comboBrand";
             this.comboBrand.Size = new System.Drawing.Size(121, 21);
             this.comboBrand.TabIndex = 17;
@@ -184,7 +193,7 @@ namespace WindowsFormPdvUth2021
             "KILO",
             "LITRO",
             "CAJA"});
-            this.comboMetricUnit.Location = new System.Drawing.Point(378, 179);
+            this.comboMetricUnit.Location = new System.Drawing.Point(357, 216);
             this.comboMetricUnit.Name = "comboMetricUnit";
             this.comboMetricUnit.Size = new System.Drawing.Size(121, 21);
             this.comboMetricUnit.TabIndex = 18;
@@ -195,16 +204,58 @@ namespace WindowsFormPdvUth2021
             this.comboSubcategory.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.comboSubcategory.Location = new System.Drawing.Point(378, 153);
+            this.comboSubcategory.Location = new System.Drawing.Point(357, 190);
             this.comboSubcategory.Name = "comboSubcategory";
             this.comboSubcategory.Size = new System.Drawing.Size(121, 21);
             this.comboSubcategory.TabIndex = 19;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1424, 65);
+            this.panel1.TabIndex = 20;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Location = new System.Drawing.Point(0, 63);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1427, 65);
+            this.panel2.TabIndex = 21;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1362, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 323);
+            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.ClientSize = new System.Drawing.Size(1424, 861);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboSubcategory);
             this.Controls.Add(this.comboMetricUnit);
             this.Controls.Add(this.comboBrand);
@@ -224,6 +275,10 @@ namespace WindowsFormPdvUth2021
             this.Controls.Add(this.Nombre);
             this.Name = "Form1";
             this.Text = "Products Catalog";
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,6 +303,10 @@ namespace WindowsFormPdvUth2021
         private System.Windows.Forms.ComboBox comboBrand;
         private System.Windows.Forms.ComboBox comboMetricUnit;
         private System.Windows.Forms.ComboBox comboSubcategory;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
