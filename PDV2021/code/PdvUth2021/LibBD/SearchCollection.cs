@@ -3,11 +3,11 @@
     public class SearchCollection
     {
         //constructor
-        public SearchCollection(string name, CriteriaOperator ope, object value, bool isVarchar, LogicOperator logicOp)
+        public SearchCollection(string name, CriteriaOperator ope, object val, bool isVarchar, LogicOperator logicOp)
         {
             Name = name;
             Operator = ope;
-            Value = value;
+            Value = val;
             IsVarchar = isVarchar;
             LogicOp = logicOp;
         }
@@ -79,6 +79,15 @@
                     break;
             }
             return res;
+        }
+
+        public string varcharValue() 
+        {
+            if (this.IsVarchar)
+            {
+                return $"'{this.Value}'";
+            }
+            return this.Value.ToString();
         }
     }
 }

@@ -252,12 +252,12 @@ namespace LibBD
                     parsedFields += $"{col},";
                 }
                 //remove the last comma
-                parsedFields = parsedFields.Remove(parsedFields.Length - 2);
+                parsedFields = parsedFields.Remove(parsedFields.Length - 1); //cambio
                 string parsedWhere = "";
                 //Parse the search collections
                 foreach (SearchCollection criteria in search)
                 {   //SELECT * FROM  products WHERE -> codBarras lik '%123123123%'
-                    parsedWhere += $" {criteria.Name} {criteria.parseOperator(criteria.Operator)} {criteria.Value} {criteria.parseLogicOperator(criteria.LogicOp)}";
+                    parsedWhere += $" {criteria.Name} {criteria.parseOperator(criteria.Operator)} {criteria.varcharValue()} {criteria.parseLogicOperator(criteria.LogicOp)}";
                 }
 
                 //create the select query
@@ -279,8 +279,9 @@ namespace LibBD
                         {
                             row.Add(dr.GetValue(i));
                             //we collect the list to the res Collection
-                            res.Add(row);
+                            
                         }
+                        res.Add(row);
                     }
                 }
                 else
@@ -327,7 +328,7 @@ namespace LibBD
                         parsedFields += $"{col},";
                     }
                     //remove the last comma
-                    parsedFields = parsedFields.Remove(parsedFields.Length - 2);
+                    parsedFields = parsedFields.Remove(parsedFields.Length - 1);
                     string parsedWhere = "";
                     //Parse the search collections
                     foreach (SearchCollection criteria in search)
@@ -362,8 +363,9 @@ namespace LibBD
                             {
                                 row.Add(dr.GetValue(i));
                                 //we collect the list to the res Collection
-                                res.Add(row);
+                                
                             }
+                            res.Add(row);
                         }
                     }
                     else

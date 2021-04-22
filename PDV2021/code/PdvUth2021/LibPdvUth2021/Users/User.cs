@@ -41,7 +41,7 @@ namespace LibPdvUth2021.Users
             List<SearchCollection> data = new List<SearchCollection>();
             //data.Add( new SearchCollection("email", CriteriaOperator.EQUAL, email, true, LogicOperator.NOTHING));
             //data.Add( new SearchCollection("password", CriteriaOperator.EQUAL, password, true, LogicOperator.NOTHING));
-            SearchCollection usEmail = new SearchCollection("email", CriteriaOperator.EQUAL, email, true, LogicOperator.NOTHING);
+            SearchCollection usEmail = new SearchCollection("email", CriteriaOperator.EQUAL, email, true, LogicOperator.AND);
             SearchCollection usPassword = new SearchCollection("password", CriteriaOperator.EQUAL, password, true, LogicOperator.NOTHING);
             data.Add(usEmail);
             data.Add(usPassword);
@@ -54,23 +54,22 @@ namespace LibPdvUth2021.Users
             //}
             //return base.read(data).Count > 0 ? true : false; //operador ternario
 
-            return new User()
-            {
-                Id = ((int)(res[0])[0]),
-                Name = ((res[0])[1]).ToString(),
-                Lastname = ((res[0])[2]).ToString(),
-                MothersLastname = ((res[0])[3]).ToString(),
-                Email = ((res[0])[4]).ToString(),
-                Password = ((res[0])[5]).ToString(),
-                Type = ((UserType)(res[0])[6]),
-                Street = ((res[0])[7]).ToString(),
-                HouseNumber = ((res[0])[8]).ToString(),
-                Residential = ((res[0])[9]).ToString(),
-                PostalCode = ((res[0])[10]).ToString(),
-                RegionState = ((res[0])[11]).ToString(),
-                CURP = ((res[0])[12]).ToString(),
-                RFC = ((res[0])[13]).ToString()
-            };
+            this.Id = ((int)(res[0])[0]);
+            this.Name = ((res[0])[1]).ToString();
+            this.Lastname = ((res[0])[2]).ToString();
+            this.MothersLastname = ((res[0])[3]).ToString();
+            this.Email = ((res[0])[4]).ToString();
+            this.Password = ((res[0])[5]).ToString();
+            this.Type = (res[0])[6].ToString() == UserType.ADMIN.ToString() ? UserType.ADMIN : UserType.CASHIER;
+            this.Street = ((res[0])[7]).ToString();
+            this.HouseNumber = ((res[0])[8]).ToString();
+            this.Residential = ((res[0])[9]).ToString();
+            this.PostalCode = ((res[0])[10]).ToString();
+            this.RegionState = ((res[0])[11]).ToString();
+            this.CURP = ((res[0])[12]).ToString();
+            this.RFC = ((res[0])[13]).ToString();
+
+            return this;
         }
     }
 }
