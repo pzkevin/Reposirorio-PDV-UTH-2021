@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace WindowsFormPdvUth2021
 {
@@ -25,16 +26,18 @@ namespace WindowsFormPdvUth2021
         {
             User user = new User();
             user = user.Login(emailInput.Text, passwordInput.Text);
-            if (user!=null&&user.Email!="") 
+            if (user != null && user.Email != "")
             {
                 MessageBox.Show($"Bienvenido {user.Name} {user.Lastname}");
                 FrmLogin.usuarioLogeado = user;
+                emailInput.Text = string.Empty;
+                passwordInput.Text = string.Empty;
                 if (FrmLogin.usuarioLogeado.Type == UserType.ADMIN)
                 {
                     //Mostrar Dashboard Administrador
-                    Form1 agregarProductos = new Form1();
+                    FrmProducts form1 = new FrmProducts();
                     this.Hide();
-                    agregarProductos.ShowDialog(); //solo permite un Form funcionando
+                    form1.ShowDialog(); //solo permite un Form funcionando
                     this.Show();
                 }
                 else 

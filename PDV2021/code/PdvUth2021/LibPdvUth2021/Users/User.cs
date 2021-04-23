@@ -53,7 +53,6 @@ namespace LibPdvUth2021.Users
 
             //}
             //return base.read(data).Count > 0 ? true : false; //operador ternario
-
             this.Id = ((int)(res[0])[0]);
             this.Name = ((res[0])[1]).ToString();
             this.Lastname = ((res[0])[2]).ToString();
